@@ -1,0 +1,198 @@
+{
+  "chords": [
+    {
+      "shortName": "A",
+      "fullName": "A Major",
+      "image": "p_amajor",
+      "description": "The A major chord is a bright, happy-sounding chord.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "piano",
+      "genres": [
+        "pop",
+        "jazz"
+      ],
+      "createdDate": "2023-01-01",
+      "isFavourite": true
+    },
+    {
+      "shortName": "Am",
+      "fullName": "A Minor",
+      "image": "p_aminor",
+      "description": "The A minor chord has a melancholic and deep tone.",
+      "rating": 4,
+      "difficulty": "easy",
+      "type": "minor",
+      "instrument": "piano",
+      "genres": [
+        "pop",
+        "classical"
+      ],
+      "createdDate": "2023-01-02",
+      "isFavourite": false
+    },
+    {
+      "shortName": "C",
+      "fullName": "C Major",
+      "image": "p_cmajor",
+      "description": "The C major chord is a foundational chord with a strong, open sound.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "piano",
+      "genres": [
+        "pop",
+        "blues"
+      ],
+      "createdDate": "2023-01-03",
+      "isFavourite": true
+    },
+    {
+      "shortName": "Cm",
+      "fullName": "C Minor",
+      "image": "p_cminor",
+      "description": "The C minor chord has a moody, somber sound often used in emotional pieces.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "piano",
+      "genres": [
+        "jazz",
+        "classical"
+      ],
+      "createdDate": "2023-01-04",
+      "isFavourite": false
+    },
+    {
+      "shortName": "D",
+      "fullName": "D Major",
+      "image": "p_dmajor",
+      "description": "The D major chord has a bright and cheerful tone.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "piano",
+      "genres": [
+        "rock",
+        "pop"
+      ],
+      "createdDate": "2023-01-05",
+      "isFavourite": true
+    },
+    {
+      "shortName": "Dm",
+      "fullName": "D Minor",
+      "image": "p_dminor",
+      "description": "The D minor chord has a melancholic and dramatic sound.",
+      "rating": 4,
+      "difficulty": "easy",
+      "type": "minor",
+      "instrument": "piano",
+      "genres": [
+        "blues",
+        "classical"
+      ],
+      "createdDate": "2023-01-06",
+      "isFavourite": false
+    },
+    {
+      "shortName": "E",
+      "fullName": "E Major",
+      "image": "p_emajor",
+      "description": "The E major chord has a strong, resonant tone that’s popular in rock and blues.",
+      "rating": 5,
+      "difficulty": "intermediate",
+      "type": "major",
+      "instrument": "piano",
+      "genres": [
+        "rock",
+        "blues"
+      ],
+      "createdDate": "2023-01-07",
+      "isFavourite": true
+    },
+    {
+      "shortName": "Em",
+      "fullName": "E Minor",
+      "image": "p_eminor",
+      "description": "The E minor chord has a haunting and introspective sound.",
+      "rating": 4,
+      "difficulty": "easy",
+      "type": "minor",
+      "instrument": "piano",
+      "genres": [
+        "pop",
+        "jazz"
+      ],
+      "createdDate": "2023-01-08",
+      "isFavourite": false
+    },
+    {
+      "shortName": "F",
+      "fullName": "F Major",
+      "image": "p_fmajor",
+      "description": "The F major chord has a full, rich sound that’s very popular in pop and classical music.",
+      "rating": 5,
+      "difficulty": "intermediate",
+      "type": "major",
+      "instrument": "piano",
+      "genres": [
+        "pop",
+        "classical"
+      ],
+      "createdDate": "2023-01-09",
+      "isFavourite": true
+    },
+    {
+      "shortName": "Fm",
+      "fullName": "F Minor",
+      "image": "p_fminor",
+      "description": "The F minor chord has a dark and intense sound, adding depth to many compositions.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "minor",
+      "instrument": "piano",
+      "genres": [
+        "jazz",
+        "blues"
+      ],
+      "createdDate": "2023-01-10",
+      "isFavourite": false
+    },
+    {
+      "shortName": "G",
+      "fullName": "G Major",
+      "image": "p_gmajor",
+      "description": "The G major chord has a happy and lively sound, commonly used in many genres.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "piano",
+      "genres": [
+        "pop",
+        "rock"
+      ],
+      "createdDate": "2023-01-11",
+      "isFavourite": true
+    },
+    {
+      "shortName": "Gm",
+      "fullName": "G Minor",
+      "image": "p_gminor",
+      "description": "The G minor chord has a mysterious, somewhat melancholic tone.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "piano",
+      "genres": [
+        "jazz",
+        "classical"
+      ],
+      "createdDate": "2023-01-12",
+      "isFavourite": false
+    }
+  ]
+}
+
+

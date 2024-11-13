@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Chordion</string>
+    <string name="welcome_heading">Discover Chords\nFrom Your Smartphone</string>
+    <string name="welcome_description">Learn to play all the chords you want with our chord library, more than thousand chords!</string>
+    <string name="button_started">Let\'s Go</string>
+    <string name="button_quit">Maybe another time</string>
 </resources>

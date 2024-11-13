@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Color Palette:
+    - https://www.pinterest.com/pin/ui-design-color-palette-461900505544262732/
+    - https://paperheartdesign.com/blog/color-palette-forest-floor
+    - Difficulties color palete: https://www.deviantart.com/itztheprius/art/Tower-of-Difficulty-Chart-Color-Palette-1-969510361
+-->
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#24293e</color>
+    <color name="accent">#8ebbff</color>
+    <color name="text">#f4f5fc</color>
+    <color name="primary">#0d0f1e</color>
+    <color name="secondary">#cccccc</color>
+    <color name="outline">#b5ccda</color>
+    <color name="highlight">#febf89</color>
+
+    <color name="easy">#4B974B</color>
+    <color name="intermediate">#DA8541</color>
+    <color name="hard">#C4281C</color>
+
+<!--    <color name="secondary">#5c7ca3</color>-->
 </resources>

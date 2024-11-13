@@ -6,22 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_weight="1"
     android:gravity="center"
     tools:context=".WelcomeActivity" >
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="788dp"
-        android:layout_weight="0.7"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/banner" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:orientation="vertical"
         android:padding="15dp">
 
@@ -30,45 +31,45 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:fontFamily="@font/source_sans_pro_bold"
-            android:text="Discover Chords\nFrom Your Smartphone"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="@string/welcome_heading"
             android:textAlignment="center"
             android:textSize="30sp"
             app:lineHeight="35sp" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="367dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/source_sans_pro"
-            android:text="Learn to play all the chords you want with our chord library, more than thousand chords!"
+            android:text="@string/welcome_description"
             android:textAlignment="center"
             android:textSize="18sp" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/primary"
             android:fontFamily="@font/source_sans_pro_semibold"
-            android:text="Get Started"
-            android:textSize="20sp"
+            android:text="@string/button_started"
+            android:textSize="18sp"
             app:cornerRadius="5sp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:backgroundTint="@color/white"
             android:fontFamily="@font/source_sans_pro_semibold"
-            android:text="Login"
+            android:text="@string/button_quit"
             android:textColor="#000000"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:cornerRadius="5dp"
+
+
             app:strokeColor="#000000"
-
-
             app:strokeWidth="1dp" />
     </LinearLayout>
 
