@@ -1,6 +1,16 @@
-/***
- * Reference: https://www.youtube.com/watch?v=Jv9Plup2zZA
- */
+/*
+  RMIT University Vietnam
+  Course: COSC2657 - Android Development
+  Semester: 2024C
+  Assessment: Assignment 1
+  Author: Nguyen Anh Duy
+  ID: s3878141
+  Created  date: 09/11/2024
+  Last modified: 17/11/2024
+  Acknowledgement (Reference):
+  1. Navigation with Intents: W2 Tutorial Lab - Code Example
+  2. Create animated splash screen with anim folder: https://www.youtube.com/watch?v=Jv9Plup2zZA
+*/
 
 package vn.edu.rmit.chordion;
 
@@ -26,7 +36,7 @@ public class SplashScreen extends AppCompatActivity {
         ImageView noteIcon = findViewById(R.id.noteIcon);
         ImageView logo = findViewById(R.id.logoSmall);
 
-        // Load animations
+        // Load animations: rotate and fadeIn
         Animation rotateAnimation = AnimationUtils.loadAnimation(this, R.anim.rotate);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
 
@@ -35,17 +45,17 @@ public class SplashScreen extends AppCompatActivity {
             noteIcon.startAnimation(rotateAnimation);
         }, 100);
 
-        // After 5 seconds, transition to the next activity
+        // After 2 seconds, make the logo appear
         new Handler().postDelayed(() -> {
-            // Make the text visible and start fade-in animation on the text
             logo.setVisibility(View.VISIBLE);
             logo.startAnimation(fadeInAnimation);
-        }, 2000); // Total duration of splash screen: 5 seconds
+        }, 2000);
 
+        // After a total of 5 seconds -> navigate to welcome screen
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(SplashScreen.this, WelcomeActivity.class);
             startActivity(intent);
             finish();
-        },  ANIMATION_TIME_OUT);
+        },  ANIMATION_TIME_OUT); // duration of splash screen: 5 seconds
     }
 }

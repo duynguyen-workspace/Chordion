@@ -4,12 +4,61 @@ Reference:
 1. Import json file to asset folder: https://www.delasign.com/blog/android-studio-kotlin-json/
 
 -->
-<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/recyclerView"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/background"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:drawableLeft="@drawable/dashboard"
+                android:text="@string/go_to_home"
+                android:backgroundTint="@color/accent"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textStart"
+                android:onClick="navigateToHomeFromList" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:drawableLeft="@drawable/edit"
+                android:text="@string/button_new_chord"
+                android:backgroundTint="@color/highlight"
+                android:textAlignment="textStart"
+                android:onClick="navigateToFormFromList" />
+        </LinearLayout>
+
+    </FrameLayout>
 
 
-</androidx.recyclerview.widget.RecyclerView>
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_view_background"
+        android:layout_margin="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:padding="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+

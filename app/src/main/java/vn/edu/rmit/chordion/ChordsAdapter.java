@@ -1,10 +1,16 @@
 /*
-* Reference:
-* 1. Set margin and padding for TextView dynamically: https://stackoverflow.com/questions/12728255/in-android-how-do-i-set-margins-in-dp-programmatically
-* 2. Set font family for TextView dynamically: https://stackoverflow.com/questions/12128331/how-to-change-fontfamily-of-textview-in-android
-* 3.
-* */
-
+  RMIT University Vietnam
+  Course: COSC2657 - Android Development
+  Semester: 2024C
+  Assessment: Assignment 1
+  Author: Nguyen Anh Duy
+  ID: s3878141
+  Created  date: 12/11/2024
+  Last modified: 17/11/2024
+  Acknowledgement (Reference):
+  1. Set margin and padding for TextView dynamically: https://stackoverflow.com/questions/12728255/in-android-how-do-i-set-margins-in-dp-programmatically
+  2. Set font family for TextView dynamically: https://stackoverflow.com/questions/12128331/how-to-change-fontfamily-of-textview-in-android
+*/
 
 package vn.edu.rmit.chordion;
 
@@ -12,16 +18,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Build;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,7 +34,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.Objects;
+import java.util.List;
 
 public class ChordsAdapter extends RecyclerView.Adapter<ChordsAdapter.ChordViewHolder> {
 
@@ -39,6 +44,16 @@ public class ChordsAdapter extends RecyclerView.Adapter<ChordsAdapter.ChordViewH
     public ChordsAdapter(ArrayList<Chord> chords, AppCompatActivity activity) {
         this.chords = chords;
         this.context = activity;
+    }
+
+    public void setFilteredList(List<Chord> filteredList) {
+        this.chords = (ArrayList) filteredList;
+        notifyDataSetChanged();
+    }
+
+    public void addChord(Chord newChord) {
+        this.chords.add(newChord);
+        notifyItemInserted(chords.size() - 1);
     }
 
     @Override
@@ -74,10 +89,6 @@ public class ChordsAdapter extends RecyclerView.Adapter<ChordsAdapter.ChordViewH
                 intent.putExtra("description", chordItem.getDescription());
                 intent.putExtra("isFavourite", chordItem.isFavourite());
                 intent.putStringArrayListExtra("genres", chordItem.getGenres());
-
-                if (chordItem.getCreatedDate() != null) {
-                    intent.putExtra("createdDate", chordItem.getCreatedDate().getTime());
-                }
 
                 context.startActivity(intent);
             }
@@ -161,10 +172,10 @@ public class ChordsAdapter extends RecyclerView.Adapter<ChordsAdapter.ChordViewH
                     return R.drawable.piano;
                 case "flute":
                     return R.drawable.flute;
+                case "violin":
+                    return R.drawable.violin;
                 case "guitar":
                     return R.drawable.guitar;
-                case "ukulele":
-                    return R.drawable.ukulele;
                 case "keyboard":
                     return R.drawable.keyboard;
                 default:

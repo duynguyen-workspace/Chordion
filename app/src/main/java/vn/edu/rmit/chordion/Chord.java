@@ -1,9 +1,15 @@
+/*
+  RMIT University Vietnam
+  Course: COSC2657 - Android Development
+  Semester: 2024C
+  Assessment: Assignment 1
+  Author: Nguyen Anh Duy
+  ID: s3878141
+  Created  date: 12/11/2024
+  Last modified: 17/11/2024
+*/
+
 package vn.edu.rmit.chordion;
-
-import android.os.Parcel;
-import android.os.Parcelable;
-
-import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,7 +24,6 @@ public class Chord {
     private String difficulty;
     private String description;
     private ArrayList<String> genres;
-    private Date createdDate;
     private boolean isFavourite;
 
     public ArrayList<String> getGenres() {
@@ -98,14 +103,6 @@ public class Chord {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Date getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
     }
 
     public boolean isFavourite() {

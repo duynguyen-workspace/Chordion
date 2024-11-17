@@ -1,13 +1,26 @@
 /*
-* Reference:
-* 1. Reading JSON file and display with RecyclerView: https://www.youtube.com/watch?v=29jY8pCTWq8
-*
-* */
+  RMIT University Vietnam
+  Course: COSC2657 - Android Development
+  Semester: 2024C
+  Assessment: Assignment 1
+  Author: Nguyen Anh Duy
+  ID: s3878141
+  Created  date: 16/11/2024
+  Last modified: 17/11/2024
+  Acknowledgement (Reference):
+  1. Navigation with Intents: W2 Tutorial Lab - Code Example
+  2. Reading JSON file and display with RecyclerView: https://www.youtube.com/watch?v=29jY8pCTWq8
+  3. Custom SearchView with RecyclerView: https://www.youtube.com/watch?v=tQ7V7iBg5zE
+*/
 
 package vn.edu.rmit.chordion;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.SearchView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,12 +32,14 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ChordListActivity extends AppCompatActivity {
     private ArrayList<Chord> chords;
+    RecyclerView recyclerView;
+
+    ChordsAdapter chordsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +49,52 @@ public class ChordListActivity extends AppCompatActivity {
         chords = new ArrayList<>();
         getChordsData();
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
-        ChordsAdapter chordsAdapter = new ChordsAdapter(chords, ChordListActivity.this);
+        SearchView searchView = findViewById(R.id.searchView);
+        searchView.clearFocus();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filterList(newText);
+                return false;
+            }
+        });
+
+        recyclerView = findViewById(R.id.recyclerView);
+        chordsAdapter = new ChordsAdapter(chords, ChordListActivity.this);
         recyclerView.setAdapter(chordsAdapter);
 
+    }
+
+    private void filterList(String text) {
+        List<Chord> searchList = new ArrayList<>();
+        for (Chord chord: chords) {
+            if (chord.getFullName().toLowerCase().contains(text.toLowerCase())) {
+                searchList.add(chord);
+            }
+        }
+
+        if (searchList.isEmpty()) {
+            Toast.makeText(this, "No search result found!", Toast.LENGTH_SHORT).show();
+        } else {
+            chordsAdapter.setFilteredList(searchList);
+        }
+    }
+
+    public void navigateToHomeFromList(View v) {
+        Intent intent = new Intent(ChordListActivity.this, MainActivity.class);
+        setResult(RESULT_OK, intent);
+        finish();
+    }
+
+    public void navigateToFormFromList(View v) {
+        Intent intent = new Intent(ChordListActivity.this, ChordFormActivity.class);
+        intent.putExtra("statusCode", 300);
+        startActivityForResult(intent,300);
     }
 
     private void getChordsData() {
@@ -46,9 +103,6 @@ public class ChordListActivity extends AppCompatActivity {
         try {
             JSONObject rootJson = new JSONObject(json);
             JSONArray chordsList = rootJson.getJSONArray("chords");
-
-            // Date formatter
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
             // Iterate through the array
             for (int i = 0; i < chordsList.length(); i++) {
@@ -59,8 +113,8 @@ public class ChordListActivity extends AppCompatActivity {
                 chord.setShortName(chordObject.getString("shortName"));
                 chord.setFullName(chordObject.getString("fullName"));
 
-                String imageID = chordObject.getString("image");
-                int imageResourceId = getResources().getIdentifier(imageID,"drawable", getPackageName());
+                String image = chordObject.getString("image");
+                int imageResourceId = getResources().getIdentifier(image,"drawable", getPackageName());
                 chord.setImageId(imageResourceId);
 
                 chord.setDescription(chordObject.getString("description"));
@@ -77,16 +131,12 @@ public class ChordListActivity extends AppCompatActivity {
                 }
                 chord.setGenres(genres);
 
-                // Parsing date
-                String dateStr = chordObject.getString("createdDate");
-                chord.setCreatedDate(dateFormat.parse(dateStr));
-
                 chord.setFavourite(chordObject.getBoolean("isFavourite"));
 
                 // Add chord to the list
                 chords.add(chord);
             }
-        } catch(JSONException | ParseException e) {
+        } catch(JSONException e) {
             e.printStackTrace();
             Log.e("ChordListActivity", "Error parsing chords data", e);
         }
@@ -113,5 +163,17 @@ public class ChordListActivity extends AppCompatActivity {
         }
 
         return json;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 300) {
+            if (resultCode == RESULT_OK){
+                Intent intent = new Intent(ChordListActivity.this, MainActivity.class);
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        }
     }
 }

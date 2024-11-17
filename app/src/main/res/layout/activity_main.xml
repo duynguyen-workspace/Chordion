@@ -1,19 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--
+  RMIT University Vietnam
+  Course: COSC2657 - Android Development
+  Semester: 2024C
+  Assessment: Assignment 1
+  Author: Nguyen Anh Duy
+  ID: s3878141
+  Created  date: 08/11/2024
+  Last modified: 17/11/2024
+  Acknowledgement (Reference):
+  1. Navigation with Intents: W2 Tutorial Lab - Code Example
+  2. Custom Grid Layout: https://www.youtube.com/watch?v=PFEb9FfopFo
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="15dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="@string/good_morning"
+            android:textColor="#5F5F5F"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:text="@string/main_title_1"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textTitle1"
+                android:fontFamily="@font/source_sans_pro_bold"
+                android:text="@string/main_title_2"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/accent"
+                android:textSize="22sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/banner_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/list"
+                android:text="@string/chords_gallery"
+                android:backgroundTint="@color/accent"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textStart"
+                android:onClick="navigateToListFromHome"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/edit"
+                android:text="@string/button_new_chord"
+                android:backgroundTint="@color/highlight"
+                android:textAlignment="textStart"
+                android:onClick="navigateToFormFromHome" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="@string/label_instruments"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/instrumentsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        app:srcCompat="@drawable/piano"
+                        android:scaleType="fitCenter"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/piano"
+                        android:onClick="navigateToListFromHome"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        app:srcCompat="@drawable/guitar"
+                        android:scaleType="fitCenter"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/guitar"
+                        android:onClick="navigateToFormFromHome"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        app:srcCompat="@drawable/flute"
+                        android:scaleType="fitCenter"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/flute"
+                        android:onClick="navigateToListFromHome"/>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:shapeAppearanceOverlay="@style/roundedImageView"
+                        app:srcCompat="@drawable/violin"
+                        android:scaleType="fitCenter"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/violin"
+                        android:onClick="navigateToListFromHome"/>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="@string/label_genres"
+                android:textSize="20sp" />
+
+            <GridLayout
+                android:id="@+id/genresGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="4">
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="#FF0000"
+                    android:text="@string/pop"
+                    app:cornerRadius="5dp"
+                    android:onClick="navigateToListFromHome" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="5dp"
+                    android:backgroundTint="#FF00FF"
+                    android:text="@string/jazz"
+                    app:cornerRadius="5dp"
+                    android:onClick="navigateToListFromHome"/>
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="#428324"
+                    android:text="@string/classical"
+                    app:cornerRadius="5dp"
+                    android:onClick="navigateToListFromHome" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="5dp"
+                    android:backgroundTint="#FBBC05"
+                    android:text="@string/blues"
+                    app:cornerRadius="5dp"
+                    android:onClick="navigateToListFromHome"/>
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="#FF9636"
+                    android:text="@string/rock"
+                    app:cornerRadius="5dp"
+                    android:onClick="navigateToListFromHome" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="5dp"
+                    android:backgroundTint="#665A50"
+                    android:text="@string/folk"
+                    app:cornerRadius="5dp"
+                    android:onClick="navigateToListFromHome" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="#850B50"
+                    android:text="@string/edm"
+                    app:cornerRadius="5dp"
+                    android:onClick="navigateToListFromHome" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_marginStart="5dp"
+                    android:backgroundTint="#DAD870"
+                    android:text="@string/country"
+                    app:cornerRadius="5dp"
+                    android:onClick="navigateToListFromHome" />
+
+            </GridLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/banner_footer"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

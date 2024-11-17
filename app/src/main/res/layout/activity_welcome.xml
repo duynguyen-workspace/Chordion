@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  RMIT University Vietnam
+  Course: COSC2657 - Android Development
+  Semester: 2024C
+  Assessment: Assignment 1
+  Author: Nguyen Anh Duy
+  ID: s3878141
+  Created  date: 08/11/2024
+  Last modified: 17/11/2024
+-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,7 +22,7 @@
     tools:context=".WelcomeActivity" >
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/welcomeBanner"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.8"
@@ -27,7 +38,7 @@
         android:padding="15dp">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/welcomeTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -38,7 +49,7 @@
             app:lineHeight="35sp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/welcomeDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -48,27 +59,27 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonStart"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:backgroundTint="@color/primary"
             android:fontFamily="@font/source_sans_pro_semibold"
+            android:onClick="navigateToHome"
             android:text="@string/button_started"
             android:textSize="18sp"
             app:cornerRadius="5sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonQuit"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:backgroundTint="@color/white"
             android:fontFamily="@font/source_sans_pro_semibold"
+            android:onClick="quit"
             android:text="@string/button_quit"
             android:textColor="#000000"
             android:textSize="18sp"
             app:cornerRadius="5dp"
-
-
             app:strokeColor="#000000"
             app:strokeWidth="1dp" />
     </LinearLayout>

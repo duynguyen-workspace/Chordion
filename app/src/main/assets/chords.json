@@ -13,7 +13,6 @@
         "pop",
         "jazz"
       ],
-      "createdDate": "2023-01-01",
       "isFavourite": true
     },
     {
@@ -29,7 +28,6 @@
         "pop",
         "classical"
       ],
-      "createdDate": "2023-01-02",
       "isFavourite": false
     },
     {
@@ -45,7 +43,6 @@
         "pop",
         "blues"
       ],
-      "createdDate": "2023-01-03",
       "isFavourite": true
     },
     {
@@ -61,7 +58,6 @@
         "jazz",
         "classical"
       ],
-      "createdDate": "2023-01-04",
       "isFavourite": false
     },
     {
@@ -77,7 +73,6 @@
         "rock",
         "pop"
       ],
-      "createdDate": "2023-01-05",
       "isFavourite": true
     },
     {
@@ -93,7 +88,6 @@
         "blues",
         "classical"
       ],
-      "createdDate": "2023-01-06",
       "isFavourite": false
     },
     {
@@ -109,7 +103,6 @@
         "rock",
         "blues"
       ],
-      "createdDate": "2023-01-07",
       "isFavourite": true
     },
     {
@@ -125,7 +118,6 @@
         "pop",
         "jazz"
       ],
-      "createdDate": "2023-01-08",
       "isFavourite": false
     },
     {
@@ -157,7 +149,6 @@
         "jazz",
         "blues"
       ],
-      "createdDate": "2023-01-10",
       "isFavourite": false
     },
     {
@@ -173,7 +164,6 @@
         "pop",
         "rock"
       ],
-      "createdDate": "2023-01-11",
       "isFavourite": true
     },
     {
@@ -189,7 +179,792 @@
         "jazz",
         "classical"
       ],
-      "createdDate": "2023-01-12",
+      "isFavourite": false
+    },
+    {
+      "shortName": "A",
+      "fullName": "A Major",
+      "image": "g_amajor",
+      "description": "The A major chord is one of the foundational chords for guitar players. It has a bright, happy tone and is often used in pop, rock, and country music. Beginners usually start with this chord due to its simplicity.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "guitar",
+      "genres": [
+        "pop",
+        "rock"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Am",
+      "fullName": "A Minor",
+      "image": "g_aminor",
+      "description": "The A minor chord is popular for its emotional, melancholic sound. It’s often featured in classical pieces and soft rock ballads. This chord adds depth to any musical composition.",
+      "rating": 4,
+      "difficulty": "easy",
+      "type": "minor",
+      "instrument": "guitar",
+      "genres": [
+        "classical",
+        "rock"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "B",
+      "fullName": "B Major",
+      "image": "g_bmajor",
+      "description": "The B major chord is known for its bold and powerful tone, perfect for energetic rock and jazz pieces. It requires a barre technique, which makes it a bit challenging for beginners.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "major",
+      "instrument": "guitar",
+      "genres": [
+        "rock",
+        "jazz"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Bm",
+      "fullName": "B Minor",
+      "image": "g_bminor",
+      "description": "The B minor chord delivers a deep, soulful vibe that suits a variety of genres, from blues to modern pop. It’s a versatile chord that requires precise finger placement.",
+      "rating": 3,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "guitar",
+      "genres": [
+        "blues",
+        "pop",
+        "rock"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "C",
+      "fullName": "C Major",
+      "image": "g_cmajor",
+      "description": "The C major chord has a warm and open sound, making it a favorite for folk and pop songs. Its straightforward finger placement makes it a go-to chord for beginners.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "guitar",
+      "genres": [
+        "folk",
+        "pop"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Cm",
+      "fullName": "C Minor",
+      "image": "g_cminor",
+      "description": "The C minor chord has a haunting, dramatic quality, often used in moody compositions and film scores. Its barre shape makes it a rewarding challenge for intermediate players.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "guitar",
+      "genres": [
+        "classical",
+        "jazz"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "D",
+      "fullName": "D Major",
+      "image": "g_dmajor",
+      "description": "The D major chord is a vibrant and uplifting chord, often used in country and bluegrass music. Its compact shape makes it an accessible choice for beginners.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "guitar",
+      "genres": [
+        "country",
+        "bluegrass",
+        "pop"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Dm",
+      "fullName": "D Minor",
+      "image": "g_dminor",
+      "description": "The D minor chord has a soulful and sorrowful tone, perfect for ballads and slow jazz pieces. Its small shape makes it easy to transition from other open chords.",
+      "rating": 4,
+      "difficulty": "easy",
+      "type": "minor",
+      "instrument": "guitar",
+      "genres": [
+        "jazz",
+        "blues"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "E",
+      "fullName": "E Major",
+      "image": "g_emajor",
+      "description": "The E major chord is one of the most commonly used chords in rock and blues. Its rich, full-bodied tone makes it perfect for both rhythm and lead playing.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "guitar",
+      "genres": [
+        "rock",
+        "blues"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Em",
+      "fullName": "E Minor",
+      "image": "g_eminor",
+      "description": "The E minor chord is known for its dark and emotional tone. It’s one of the simplest chords to play and is used in countless pop and rock songs.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "minor",
+      "instrument": "guitar",
+      "genres": [
+        "rock",
+        "pop"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "F",
+      "fullName": "F Major",
+      "image": "g_fmajor",
+      "description": "The F major chord has a rich, layered tone that adds depth to any composition. It’s often considered a challenge for beginners due to the barre technique required.",
+      "rating": 3,
+      "difficulty": "hard",
+      "type": "major",
+      "instrument": "guitar",
+      "genres": [
+        "jazz",
+        "classical"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Fm",
+      "fullName": "F Minor",
+      "image": "g_fminor",
+      "description": "The F minor chord delivers a somber and introspective sound, ideal for dramatic musical pieces. Its barre shape is challenging but rewarding for intermediate players.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "guitar",
+      "genres": [
+        "classical",
+        "jazz"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "G",
+      "fullName": "G Major",
+      "image": "g_gmajor",
+      "description": "The G major chord is a bright, cheerful chord that’s a staple in folk, country, and pop music. It’s a must-know chord for all guitar players.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "guitar",
+      "genres": [
+        "folk",
+        "pop",
+        "country"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Gm",
+      "fullName": "G Minor",
+      "image": "g_gminor",
+      "description": "The G minor chord has a mysterious, somewhat melancholic tone. It’s widely used in jazz and classical pieces, adding emotional depth to compositions.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "guitar",
+      "genres": [
+        "jazz",
+        "classical"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "A",
+      "fullName": "A Major",
+      "image": "v_amajor",
+      "description": "The A major chord is a foundational chord for violinists, known for its bright and uplifting tone. It is often used in classical compositions and is a favorite for building basic finger strength and bowing techniques.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "folk"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Am",
+      "fullName": "A Minor",
+      "image": "v_aminor",
+      "description": "The A minor chord delivers a melancholic and emotional tone, making it perfect for expressive pieces. Its relatively simple finger placement allows for smooth transitions in complex melodies.",
+      "rating": 4,
+      "difficulty": "easy",
+      "type": "minor",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "jazz"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Aaug",
+      "fullName": "A Augmented",
+      "image": "v_aaugmented",
+      "description": "The A augmented chord creates a sense of tension and drama. It is commonly used in advanced pieces and requires precision in finger placement and bow control.",
+      "rating": 3,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "experimental"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Adim",
+      "fullName": "A Diminished",
+      "image": "v_adiminished",
+      "description": "The A diminished chord is haunting and mysterious, often used in cinematic scores. Mastery of this chord enhances the violinist's ability to convey suspense and depth in performances.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "diminished",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "soundtrack"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "B",
+      "fullName": "B Major",
+      "image": "v_bmajor",
+      "description": "The B major chord is vibrant and joyful, providing a rich, full sound. Its slightly challenging finger placement makes it a stepping stone for intermediate violinists.",
+      "rating": 5,
+      "difficulty": "intermediate",
+      "type": "major",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "folk"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Bm",
+      "fullName": "B Minor",
+      "image": "v_bminor",
+      "description": "The B minor chord has a sorrowful and introspective quality, suitable for heartfelt pieces. It challenges violinists to maintain control and consistency in sound quality.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "jazz"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "C",
+      "fullName": "C Major",
+      "image": "v_cmajor",
+      "description": "The C major chord is one of the most resonant chords for the violin, often featured in orchestral and chamber music. Its clean and open sound makes it a favorite for beginner and advanced violinists alike.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "orchestral"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Cm",
+      "fullName": "C Minor",
+      "image": "v_cminor",
+      "description": "The C minor chord is known for its deep, mournful resonance. It is frequently used in emotive classical compositions and allows for dynamic bowing expression.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "soundtrack"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Caug",
+      "fullName": "C Augmented",
+      "image": "v_caugmented",
+      "description": "The C augmented chord is bold and intriguing, adding a sense of suspense to any performance. Its complex finger positioning requires precision and advanced bow techniques.",
+      "rating": 3,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "violin",
+      "genres": [
+        "experimental",
+        "classical"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Cdim",
+      "fullName": "C Diminished",
+      "image": "v_cdiminished",
+      "description": "The C diminished chord is ethereal and otherworldly, frequently featured in dramatic and experimental works. It demands a fine balance between finger pressure and bow control.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "diminished",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "soundtrack",
+        "experimental"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "D",
+      "fullName": "D Major",
+      "image": "v_dmajor",
+      "description": "The D major chord is a bright and cheerful chord that is commonly used in celebratory classical pieces. It is perfect for beginners to explore basic bowing techniques.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "folk"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Dm",
+      "fullName": "D Minor",
+      "image": "v_dminor",
+      "description": "The D minor chord offers a brooding, emotional quality, ideal for romantic and somber compositions. It is a staple chord for intermediate violinists seeking to master tone control.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "jazz"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "E",
+      "fullName": "E Major",
+      "image": "v_emajor",
+      "description": "The E major chord has a rich and vibrant sound that resonates beautifully on the violin. It is often used in lively classical compositions and provides a solid foundation for building finger strength.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "orchestral"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Em",
+      "fullName": "E Minor",
+      "image": "v_eminor",
+      "description": "The E minor chord is characterized by its haunting and melancholic tone. It is frequently featured in emotional classical and cinematic pieces, offering a dramatic touch to performances.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "soundtrack"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Eaug",
+      "fullName": "E Augmented",
+      "image": "v_eaugmented",
+      "description": "The E augmented chord creates a sense of tension and unease. It is perfect for advanced players who want to add a dramatic flair to their repertoire.",
+      "rating": 3,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "violin",
+      "genres": [
+        "experimental",
+        "classical"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Edim",
+      "fullName": "E Diminished",
+      "image": "v_ediminished",
+      "description": "The E diminished chord is delicate and eerie, making it ideal for suspenseful or mysterious compositions. Mastering this chord requires precision and subtle bowing techniques.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "diminished",
+      "instrument": "violin",
+      "genres": [
+        "soundtrack",
+        "classical"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "F",
+      "fullName": "F Major",
+      "image": "v_fmajor",
+      "description": "The F major chord has a bold and majestic sound, often used in orchestral and symphonic music. It provides a satisfying challenge for intermediate players working on finger placement.",
+      "rating": 5,
+      "difficulty": "intermediate",
+      "type": "major",
+      "instrument": "violin",
+      "genres": [
+        "orchestral",
+        "classical"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Fm",
+      "fullName": "F Minor",
+      "image": "v_fminor",
+      "description": "The F minor chord is somber and introspective, frequently featured in emotional or dramatic pieces. It requires careful finger positioning and tone control for a clean sound.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "soundtrack"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Faug",
+      "fullName": "F Augmented",
+      "image": "v_faugmented",
+      "description": "The F augmented chord is both striking and dissonant, adding a touch of complexity to advanced compositions. It is commonly used in experimental and modern classical music.",
+      "rating": 3,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "violin",
+      "genres": [
+        "experimental",
+        "modern"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Fdim",
+      "fullName": "F Diminished",
+      "image": "v_fdiminished",
+      "description": "The F diminished chord is ethereal and mysterious, perfect for creating an air of suspense in any piece. Mastering it develops a violinist’s skill in achieving dynamic control.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "diminished",
+      "instrument": "violin",
+      "genres": [
+        "soundtrack",
+        "classical"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "G",
+      "fullName": "G Major",
+      "image": "v_gmajor",
+      "description": "The G major chord is one of the most versatile and vibrant chords for the violin. Its open and resonant tone makes it ideal for a wide range of genres, from classical to folk.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "folk"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Gm",
+      "fullName": "G Minor",
+      "image": "v_gminor",
+      "description": "The G minor chord delivers a deep and soulful tone, often used in moody or dramatic compositions. It is a must-know chord for intermediate players exploring emotional pieces.",
+      "rating": 4,
+      "difficulty": "intermediate",
+      "type": "minor",
+      "instrument": "violin",
+      "genres": [
+        "classical",
+        "soundtrack"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Gaug",
+      "fullName": "G Augmented",
+      "image": "v_gaugmented",
+      "description": "The G augmented chord is powerful and dissonant, creating tension that resolves beautifully in advanced compositions. It is commonly featured in avant-garde and modern pieces.",
+      "rating": 3,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "violin",
+      "genres": [
+        "experimental",
+        "modern"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "Gdim",
+      "fullName": "G Diminished",
+      "image": "v_gdiminished",
+      "description": "The G diminished chord is haunting and evocative, often used in suspenseful and cinematic music. It demands precise finger placement and dynamic bowing for full effect.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "diminished",
+      "instrument": "violin",
+      "genres": [
+        "soundtrack",
+        "classical"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "A",
+      "fullName": "A Major",
+      "image": "f_amajor",
+      "description": "The A major chord on the flute creates a bright and uplifting sound. It's often used in classical and folk melodies, providing a clear, resonant tone perfect for beginner players.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "flute",
+      "genres": [
+        "classical",
+        "folk"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Aaug",
+      "fullName": "A Augmented",
+      "image": "f_aaugmented",
+      "description": "The A augmented chord delivers a sense of tension and suspense. It is frequently used in cinematic and experimental compositions to evoke intrigue and anticipation.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "flute",
+      "genres": [
+        "experimental",
+        "soundtrack"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "B",
+      "fullName": "B Major",
+      "image": "f_bmajor",
+      "description": "The B major chord has a clear and vibrant quality, making it a staple in orchestral and jazz compositions. Its crisp tone blends beautifully in ensemble performances.",
+      "rating": 5,
+      "difficulty": "intermediate",
+      "type": "major",
+      "instrument": "flute",
+      "genres": [
+        "orchestral",
+        "jazz"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Baug",
+      "fullName": "B Augmented",
+      "image": "f_baugmented",
+      "description": "The B augmented chord creates an unusual, sharp tone that adds complexity to advanced pieces. It's ideal for adding drama and suspense in experimental works.",
+      "rating": 3,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "flute",
+      "genres": [
+        "experimental",
+        "modern"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "C",
+      "fullName": "C Major",
+      "image": "f_cmajor",
+      "description": "The C major chord is one of the most foundational chords on the flute, producing a soft and warm tone. It’s commonly found in folk, classical, and pop melodies.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "flute",
+      "genres": [
+        "classical",
+        "folk",
+        "pop"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Caug",
+      "fullName": "C Augmented",
+      "image": "f_caugmented",
+      "description": "The C augmented chord provides a unique dissonance, ideal for creating tension in cinematic and experimental music. It challenges the player’s precision and breath control.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "flute",
+      "genres": [
+        "soundtrack",
+        "experimental"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "D",
+      "fullName": "D Major",
+      "image": "f_dmajor",
+      "description": "The D major chord on the flute produces a vibrant and lively sound, often used in celebratory and uplifting compositions. It’s a favorite for both solo and ensemble performances.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "flute",
+      "genres": [
+        "classical",
+        "folk",
+        "orchestral"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Daug",
+      "fullName": "D Augmented",
+      "image": "f_daugmented",
+      "description": "The D augmented chord offers a striking, bold tone that adds depth to modern and experimental pieces. It’s a great choice for advanced players looking to expand their repertoire.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "flute",
+      "genres": [
+        "modern",
+        "experimental"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "E",
+      "fullName": "E Major",
+      "image": "f_emajor",
+      "description": "The E major chord provides a bright and resonant tone, making it a go-to choice for uplifting melodies in classical and folk music. It’s a chord every flute player should master.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "flute",
+      "genres": [
+        "classical",
+        "folk"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Eaug",
+      "fullName": "E Augmented",
+      "image": "f_eaugmented",
+      "description": "The E augmented chord adds a sense of drama and intrigue to advanced compositions. Its sharp tone demands excellent breath control and precision from the player.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "flute",
+      "genres": [
+        "soundtrack",
+        "experimental"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "F",
+      "fullName": "F Major",
+      "image": "f_fmajor",
+      "description": "The F major chord is soft yet bold, offering a smooth resonance that’s perfect for classical and orchestral pieces. It’s ideal for creating a calm and serene atmosphere.",
+      "rating": 5,
+      "difficulty": "intermediate",
+      "type": "major",
+      "instrument": "flute",
+      "genres": [
+        "classical",
+        "orchestral"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Faug",
+      "fullName": "F Augmented",
+      "image": "f_faugmented",
+      "description": "The F augmented chord provides an edgy, dramatic sound that fits perfectly in cinematic or experimental works. Advanced players use it to add flair to their performances.",
+      "rating": 4,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "flute",
+      "genres": [
+        "soundtrack",
+        "experimental"
+      ],
+      "isFavourite": false
+    },
+    {
+      "shortName": "G",
+      "fullName": "G Major",
+      "image": "f_gmajor",
+      "description": "The G major chord is a cornerstone of flute playing, producing a bright and joyful tone. It’s widely used in folk and classical music, offering versatility and beauty in its simplicity.",
+      "rating": 5,
+      "difficulty": "easy",
+      "type": "major",
+      "instrument": "flute",
+      "genres": [
+        "classical",
+        "folk"
+      ],
+      "isFavourite": true
+    },
+    {
+      "shortName": "Gaug",
+      "fullName": "G Augmented",
+      "image": "f_gaugmented",
+      "description": "The G augmented chord adds a mysterious and modern touch to compositions. Its sharp, dissonant tone is ideal for experimental and cutting-edge musical pieces.",
+      "rating": 3,
+      "difficulty": "hard",
+      "type": "augmented",
+      "instrument": "flute",
+      "genres": [
+        "experimental",
+        "modern"
+      ],
       "isFavourite": false
     }
   ]
